@@ -2,12 +2,9 @@ package com.qa.automation.pages;
 
 import com.qa.automation.annotation.Page;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.util.Map;
 
@@ -31,19 +28,8 @@ public class SignUpPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//div[text()='This email is already connected to an account.']")
     public WebElement signupErrorMessage;
 
-    @Value("${application.url}")
-    private String url;
-
-    @Autowired
-    protected WebDriver driver;
-
-    public SignUpPage navigateToSignUpPage() {
-        SignUpPage signUpPage = navigateToCreateAccountTab();
-        return this;
-    }
-
     public SignUpPage signup(Map<String, String> userInfo) {
-        this.navigateToSignUpPage();
+        this.navigateToCreateAccountTab();
         writeText(name, userInfo.get("name"));
         writeText(email, userInfo.get("email"));
         writeText(password, userInfo.get("password"));
