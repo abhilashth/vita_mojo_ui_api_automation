@@ -1,13 +1,12 @@
-# Springboot-Cucumber-TestAutomationFramework
-Spring Boot Cucumber Test Automation Framework for Selenium, Rest Assured and Appium
+# Framework for UI and API Automation using Springs
+**ONE Framework for both UI and API Automation [Selenium, Rest Assured]**
 
-- **Spring Boot** is a popular framework, simplifies the developer by handling most of the routine activities. Configuration management, object management is done with simple annotations.
+- **Spring Boot** is a popular framework, simplifies the developer by handling most of the routine activities. Configuration, object management is done with simple annotations.
 - **Dependency Injection** : Easy to create and inject page objects, test classes, properties etc.,
 - **Cucumber** : BDD features for building feature files
 - **Selenium** : Automation tool for testing web apps.
-- **WebDriverManager** : Manage web driver automatically
+- **WebDriverManager** : Manage web drivers and browsers automatically
 - **Page Objects** : Reusable page components and get them injected into Steps and Test classes
-- **Parallel test execution** : Execute tests in parallel with multi threads.
 
 
 ## Building Framework
@@ -15,8 +14,19 @@ Spring Boot Cucumber Test Automation Framework for Selenium, Rest Assured and Ap
 
 ## Execute Test
 ### Command Line Method
-- `mvn clean test`
-- `mvn clean test -Dcucumber.filter.tags="@google"`
+- `mvn clean test` and Test Reports will be available in target/cucumber-report/cucumber.html
+
+### Via Runner
+- Complete Suite can be run using TestRunner file and Test Reports will be available in target/cucumber-report/cucumber.html
+
+### Individual Scenario
+- To execute a particular test, navigate to feature file and execute it
+
+### How to same feature file/files for UI tests
+- In application.properties file, property value for spring.profiles.active should be **UI**
+
+### How to same feature file/files for API tests
+- In application.properties file, property value for spring.profiles.active should be **API**
 
 ## Built With
 - SpringBoot
