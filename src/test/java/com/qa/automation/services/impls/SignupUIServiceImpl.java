@@ -19,8 +19,8 @@ public class SignupUIServiceImpl implements SignupService {
 
 
     @Override
-    public void signup(Map<String, String> userInfo) {
-        signUpPage.signup(userInfo);
+    public <T> T signup(Map<String, String> userInfo) {
+        return (T) signUpPage.signup(userInfo);
     }
 
     @Override

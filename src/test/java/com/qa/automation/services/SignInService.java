@@ -4,7 +4,7 @@ import java.util.Map;
 
 public interface SignInService {
 
-    void signIn(Map<String, String> userInfo);
+    <T> T signIn(Map<String, String> userInfo);
 
     boolean isSignInSuccessful(String name);
 

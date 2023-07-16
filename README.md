@@ -1,11 +1,11 @@
-# Framework for UI and API Automation using Springs
+# Framework for both UI and API Automation
 **ONE Framework for both UI and API Automation [Selenium, Rest Assured]**
 
 - **Spring Boot** is a popular framework, simplifies the developer by handling most of the routine activities. Configuration, object management is done with simple annotations.
 - **Dependency Injection** : Easy to create and inject page objects, test classes, properties etc.,
 - **Cucumber** : BDD features for building feature files
 - **Selenium** : Automation tool for testing web apps.
-- **WebDriverManager** : Manage web drivers and browsers automatically
+- **WebDriver Manager** : Manage web drivers and browsers automatically
 - **Page Objects** : Reusable page components and get them injected into Steps and Test classes
 
 
@@ -22,10 +22,10 @@
 ### Individual Scenario
 - To execute a particular test, navigate to feature file and execute it
 
-### How to same feature file/files for UI tests
+### How to execute same feature file/files for UI tests
 - In application.properties file, property value for spring.profiles.active should be **UI**
 
-### How to same feature file/files for API tests
+### How to execute same feature file/files for API tests
 - In application.properties file, property value for spring.profiles.active should be **API**
 
 ## Built With

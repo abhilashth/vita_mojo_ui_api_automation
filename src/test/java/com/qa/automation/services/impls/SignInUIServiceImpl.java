@@ -17,8 +17,8 @@ public class SignInUIServiceImpl implements SignInService {
     private SignInPage signInPage;
 
     @Override
-    public void signIn(Map<String, String> userInfo) {
-        signInPage.signIn(userInfo);
+    public <T> T signIn(Map<String, String> userInfo) {
+        return (T) signInPage.signIn(userInfo);
     }
 
     @Override
