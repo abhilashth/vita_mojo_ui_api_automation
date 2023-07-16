@@ -1,5 +1,6 @@
 # **Single** Framework for both UI and API Automation
-**ONE Framework for both UI and API Automation [Selenium, Rest Assured]**
+**ONE Framework for both UI and API Automation [Selenium, Rest Assured] . With this framework, we can use same testcases written
+ in feature file for both UI and API tests, no need to create seperate framework or testcases to handle UI and API tests**
 
 - **Spring Boot** is a popular framework, simplifies the developer by handling most of the routine activities. Configuration, object management is done with simple annotations.
 - **Dependency Injection** : Easy to create and inject page objects, test classes, properties etc.,
